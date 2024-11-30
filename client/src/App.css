@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+
+.container{
+  background-color: #f5fefb;
+  padding: 80px;
+  width: 100%;
+  min-height: 100vh;
+}
+.test{
+  font-size: 1.4em;
+  font-weight: 600;
+  color: transparent;
+  background-image: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Gradient from top to bottom */
+  -webkit-background-clip: text;
+  background-clip: text;
+   
+}
+
