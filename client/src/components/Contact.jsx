@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../asstes/styles";
-import { FaSquareFacebook ,FaSquareXTwitter,FaLink ,FaInstagram } from "react-icons/fa6";
+import {
+  FaSquareFacebook,
+  FaSquareXTwitter,
+  FaLink,
+  FaInstagram,
+} from "react-icons/fa6";
 
 function Contact() {
   const Div = styled.div`
@@ -26,17 +31,17 @@ function Contact() {
 
   return (
     <Div>
-      <Link href="facebook.com">
+      <Link href="https://www.facebook.com/algerieposteofficiel?mibextid=ZbWKwL">
         <FaSquareFacebook color={colors.blue} size={24} />
       </Link>
-      <Link>
+      <Link href="https://x.com/postedz?t=2So8Sqkp6sj6eom3H2NPBw&s=09">
         <FaSquareXTwitter color={colors.blue} size={24} />
       </Link>
-      <Link>
-        <FaLink  color={colors.blue} size={24} />
+      <Link href="https://www.poste.dz/">
+        <FaLink color={colors.blue} size={24} />
       </Link>
-      <Link>
-        <FaInstagram  color={colors.blue} size={24} />
+      <Link href="https://www.instagram.com/algerie_poste?igsh=YnU2aHExZGpjMWNt">
+        <FaInstagram color={colors.blue} size={24} />
       </Link>
     </Div>
   );

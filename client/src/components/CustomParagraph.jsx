@@ -1,12 +1,13 @@
-import React from 'react'
-import { colors } from '../asstes/styles'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
+import { colors } from "../asstes/styles";
 
-export const CustomParagraph = ({content}) => {
-    const Text = styled.p`
-    color:${colors.grey}
-    `
-  return (
-   <Text>{content}</Text>
-  )
-}
+export const CustomParagraph = ({ content, style }) => {
+  const Text = styled.p`
+    color: ${colors.grey};
+    ${({ customStyles }) =>
+      customStyles || ""}; /* Apply styles only if provided */
+  `;
+
+  return <Text customStyles={style}>{content}</Text>;
+};

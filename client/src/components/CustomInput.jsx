@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../asstes/styles";
 
-function CustomInput({ value, setValue, placeHolder }) {
+function CustomInput({ value, setValue, placeHolder,width }) {
   const Input = styled.input`
-    width: 80%;
+    width: ${width || "80%"};
     padding: 10px;
     margin: 10px 0;
     border: none;

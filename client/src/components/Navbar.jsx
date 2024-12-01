@@ -1,4 +1,5 @@
 import React from "react";
+import { MdLogout } from "react-icons/md";
 import { IoPerson } from "react-icons/io5";
 import logo from "../asstes/images/logo.png";
 import styled from "styled-components";
@@ -29,7 +30,7 @@ const Navbar = () => {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:40px
+    gap: 40px;
   `;
   const CLink = styled(Link)`
     text-decoration: none;
@@ -49,9 +50,34 @@ const Navbar = () => {
         <CLink to={"/About"}>About us</CLink>
       </List>
       <Personal>
-        <IoPerson size={24} color={colors.grey} />
-        <LuLogOut size={24} color={colors.red} />
+        <Link
+          to={"/me"}
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <IoPerson size={24} color={colors.grey} />
+        </Link>
       </Personal>
+      <div
+        onClick={() => {}}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 8,
+          cursor:'pointer'
+        }}
+      >
+        <MdLogout size={24} color={colors.red} />
+        <p
+          style={{
+            color: colors.red,
+          }}
+        >
+          Log out
+        </p>
+      </div>
     </Div>
   );
 };
