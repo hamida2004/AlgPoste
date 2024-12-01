@@ -10,6 +10,7 @@ import About from "./screens/About";
 import { Profile } from "./screens/Profile";
 import Navbar from "./components/Navbar";
 import FAQ from "./screens/FAQ";
+import Abonner from "./screens/Abonner";
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/me" element={<Profile />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/abonner" element={<Abonner />} />
         </Routes>
       </Router>
     </>

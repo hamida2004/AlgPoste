@@ -1,6 +1,6 @@
 import React from "react";
 import { colors } from "../asstes/styles";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import img from "../asstes/images/img.png";
 import Faq from "../asstes/images/Faq.png";
 import Gallery from "../asstes/images/Gallery.png";
@@ -9,6 +9,7 @@ import CustomTitle from "../components/CustomTitle";
 import CustomBtn from "../components/CustomBtn";
 import Contact from "../components/Contact";
 function About() {
+  const navigate = useNavigate();
   return (
     <>
       <div
@@ -81,7 +82,10 @@ Rejoignez-nous dans un espace dynamique où votre voix est entendue et où le so
                 marginBottom: 40,
               }}
             />
-            <CustomBtn content={"View FAQs"} />
+            <CustomBtn
+              content={"View FAQs"}
+              handleClick={() => navigate("/faq")}
+            />
           </div>
           <div
             style={{
@@ -103,7 +107,11 @@ Rejoignez-nous dans un espace dynamique où votre voix est entendue et où le so
                 marginBottom: 40,
               }}
             />
-            <CustomBtn content={"Abonner votre postes"} style={"padding:8px"} />
+            <CustomBtn
+              content={"Abonner votre postes"}
+              style={"padding:8px"}
+              handleClick={() => navigate("/abonner")}
+            />
           </div>
         </div>
       </div>
