@@ -8,7 +8,7 @@ const ATMSchema = new mongoose.Schema({
     },
     location: String,
     number: Number,
-    state: String,
+    state: Boolean,
     counter_fon: Number,
     counter_nonFon: Number,
     counter_non_cash: Number

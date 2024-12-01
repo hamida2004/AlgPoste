@@ -3,36 +3,7 @@ const jwt = require("jsonwebtoken");
 const { User } = require("../models");
 require("dotenv").config();
 
-const createUser = async (req, res) => {
-  const { user_name, email, password } = req.body;
 
-  try {
-    // Check if user already exists
-    const existingUser = await User.findOne({ email });
-    if (existingUser) {
-      return res
-        .status(400)
-        .json({ error: "This email is already registered" });
-    }
-
-    // Hash password
-    const hashedPassword = await bcrypt.hash(password, 10);
-
-    // Create new user
-    const user = new User({
-      user_name,
-      email,
-      password: hashedPassword,
-    });
-
-    await user.save();
-
-    return res.json({ user });
-  } catch (error) {
-    console.log(error);
-    return res.status(500).json({ error: error.message });
-  }
-};
 
 const loginUser = async (req, res) => {
   const { email, password } = req.body;

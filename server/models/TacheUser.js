@@ -12,8 +12,7 @@ const TacheUserSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId, 
         ref: 'Idea' 
     },
-    status: String,
-    collaboration: String
+    link
   });
 
 
