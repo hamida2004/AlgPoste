@@ -8,7 +8,7 @@ import { Link } from "react-router";
 const Navbar = () => {
   const Div = styled.div`
     width: 100%;
-    height: 80px;
+    height: 68px;
     box-shadow: 0px 0px 4px ${colors.blue};
     position: absolute;
     top: 0px;
@@ -46,6 +46,7 @@ const Navbar = () => {
         <CLink to={"/Collaboration"}>Collaboration</CLink>
         <CLink to={"/Réclamations"}>Réclamations</CLink>
         <CLink to={"/SDA"}>Suivi Distributeurs Automatiques</CLink>
+        <CLink to={"/About"}>About us</CLink>
       </List>
       <Personal>
         <IoPerson size={24} color={colors.grey} />

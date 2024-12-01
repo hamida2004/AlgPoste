@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../asstes/styles";
 
-function CustomInput() {
+function CustomInput({ value, setValue, placeHolder }) {
   const Input = styled.input`
     width: 80%;
     padding: 10px;
@@ -13,7 +13,7 @@ function CustomInput() {
     border-radius: 4px;
     background: transparent;
   `;
-  return <Input />;
+  return <Input placeholder={placeHolder} value={value} onChange={setValue} />;
 }
 
 export default CustomInput;

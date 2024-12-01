@@ -4,7 +4,7 @@ import { colors } from "../asstes/styles";
 
 const CustomTitle = ({content}) => {
   const Text = styled.p`
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-weight: 600;
     color: transparent;
     background-image: linear-gradient(

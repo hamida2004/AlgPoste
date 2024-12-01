@@ -13,6 +13,7 @@ function CustomBtn({ content, handleClick }) {
     padding: 8px 16px;
     border: none;
     font-weight:600;
+    cursor: pointer
   `;
   return <Btn onClick={handleClick}>{content}</Btn>;
 }

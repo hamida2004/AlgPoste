@@ -6,6 +6,7 @@ import Idees from "./screens/Idees";
 import Collaboration from "./screens/Collaboration";
 import Reclamation from "./screens/Reclamation";
 import Accueil from "./screens/Accueil";
+import About from "./screens/About";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Collaboration" element={<Collaboration />} />
           <Route path="/Réclamations" element={<Reclamation />} />
           <Route path="/SDA" element={<SDA />} />
+          <Route path="/About" element={<About />} />
         </Routes>
       </Router>
     </>
